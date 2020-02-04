@@ -17,4 +17,6 @@ RUN ["make", "install"]
 WORKDIR /
 RUN ["rm", "nasm-2.14.02.tar.gz"]
 
+ENV PATH="/nasm-2.14.02:${PATH}"
+
 CMD ["/bin/bash"]
